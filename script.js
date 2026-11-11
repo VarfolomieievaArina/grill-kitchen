@@ -123,7 +123,7 @@
       const name = data.reviewNames[Number(target.dataset.review)];
       openModal(
         `Отзыв — ${name}`,
-        `<img class="modal-image" src="assets/4b807.png" alt="Гриль-кухня"><p class="modal-body">${escape(data.reviewText)}</p>`,
+        `<img class="modal-image" src="assets/4b807.webp" alt="Гриль-кухня"><p class="modal-body">${escape(data.reviewText)}</p>`,
       );
     }
   });
@@ -246,7 +246,7 @@
 
   function setWork(index) {
     currentWork = (index + 2) % 2;
-    $("#work-photo").src = `assets/${currentWork ? data.work2 : "06ba3.png"}`;
+    $("#work-photo").src = `assets/${currentWork ? data.work2 : "06ba3.webp"}`;
     $$("[data-work]").forEach((b, i) => {
       b.classList.toggle("active", i === currentWork);
       b.setAttribute("aria-current", String(i === currentWork));
